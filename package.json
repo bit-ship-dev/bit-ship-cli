@@ -13,7 +13,7 @@
   "scripts": {
     "start": "node ./bin/bin.js",
     "dev": "rollup --config ../../packages/rollup/configs/cli.mjs --watch",
-    "build": "npm run typecheck && rollup --config ../../packages/rollup/configs/cli.mjs",
+    "build": "rollup --config ../../packages/rollup/configs/cli.mjs",
     "lint": "eslint --config ../../packages/eslint/configs/base.js ./src --ext .ts,.mts",
     "nightly": "node ./cli/nightly.mjs",
     "typecheck": "tsc --noEmit"
@@ -32,6 +32,7 @@
     "@repo/rollup": "workspace:*",
     "@repo/ts": "workspace:*",
     "@types/uuid": "^10.0.0",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "rollup": "catalog:"
   }
 }
