@@ -30,6 +30,7 @@ async function loadConfig (){
   try {
     const configStr = await readFile(`${path}/bit-ship.yml`, 'utf8');
     config = parseYAML(configStr);
+  // eslint-disable-next-line sonarjs/no-ignored-exceptions
   } catch (_err: any) {
     consola.warn('No bit-ship.yml file found. Create it with analyse command');
   }

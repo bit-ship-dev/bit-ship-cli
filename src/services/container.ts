@@ -17,6 +17,8 @@ const runContainer = async (opts: RunOptions) => new Promise((resolve) => {
     '-w', '/app', ...env, ...volumes,
     opts.image, ...opts.script.split(' ')
   ]
+
+  // eslint-disable-next-line sonarjs/no-os-command-from-path
   const process = spawn('docker', args);
 
   const log = opts.detouched ?

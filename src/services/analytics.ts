@@ -1,4 +1,5 @@
 import {ofetch} from 'ofetch';
+import consola from 'consola';
 
 const url = 'http://localhost:3000/api'
 
@@ -18,8 +19,8 @@ async function capture(eventName: EventName, data: any) {
       body: data,
       headers: { 'Content-Type': 'application/json' }
     })
-  } catch (_err) {
-    // TODO silent log
+  } catch (err) {
+    consola.log('Failed to send analytics event', err)
   }
 }
 
