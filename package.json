@@ -12,8 +12,8 @@
   },
   "scripts": {
     "start": "node ./bin/bin.js",
-    "dev": "rollup --config ../../packages/rollup/configs/cli.mjs --watch",
-    "build": "rollup --config ../../packages/rollup/configs/cli.mjs",
+    "dev": "rollup --config ../../packages/rollup/configs/cli.js --watch",
+    "build": "rollup --config ../../packages/rollup/configs/cli.js",
     "lint": "eslint --config ../../packages/eslint/configs/base.js ./src",
     "nightly": "node ./cli/nightly.mjs",
     "typecheck": "tsc --noEmit"
@@ -34,6 +34,7 @@
     "@repo/eslint": "workspace:*",
     "@types/uuid": "^10.0.0",
     "typescript": "catalog:",
-    "rollup": "catalog:"
+    "rollup": "catalog:",
+    "tslib": "catalog:"
   }
 }
