@@ -14,7 +14,7 @@
     "start": "node ./bin/bin.js",
     "dev": "rollup --config ../../packages/rollup/configs/cli.mjs --watch",
     "build": "rollup --config ../../packages/rollup/configs/cli.mjs",
-    "lint": "eslint --config ../../packages/eslint/configs/base.js ./src --ext .ts,.mts",
+    "lint": "eslint --config ../../packages/eslint/configs/base.js ./src",
     "nightly": "node ./cli/nightly.mjs",
     "typecheck": "tsc --noEmit"
   },
