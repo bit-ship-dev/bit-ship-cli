@@ -1,0 +1,13 @@
+
+
+> bit-ship@0.0.1 lint /Users/matthewporuben/Code/bitship/apps/client-cli
+> eslint --config ../../packages/eslint/configs/base.js ./src
+
+[0m[0m
+[0m[4m/Users/matthewporuben/Code/bitship/apps/client-cli/src/modules/analyse/analyse.ts[24m[0m
+[0m   [2m35:8[22m  [33mwarning[39m  Complete the task associated to this "TODO" comment  [2msonarjs/todo-tag[22m[0m
+[0m   [2m52:6[22m  [33mwarning[39m  Complete the task associated to this "TODO" comment  [2msonarjs/todo-tag[22m[0m
+[0m  [2m142:6[22m  [33mwarning[39m  Complete the task associated to this "TODO" comment  [2msonarjs/todo-tag[22m[0m
+[0m[0m
+[0m[33m[1m✖ 3 problems (0 errors, 3 warnings)[22m[39m[0m
+[0m[33m[1m[22m[39m[0m

@@ -1,7 +1,7 @@
 import consola from 'consola';
 import {defineCommand} from 'citty';
 import {ofetch} from 'ofetch';
-import type {Report} from '@repo/ts/types/index.d';
+import type {Report} from '@bit-ship/types/types/index.d';
 import {readFile, unlink} from 'fs/promises'
 import {useConfig} from '../../services/config';
 import {useContainer} from '../../services/container';

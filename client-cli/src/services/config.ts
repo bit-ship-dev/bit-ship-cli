@@ -2,7 +2,7 @@ import {parseYAML, stringifyYAML} from 'confbox';
 import {readFile} from 'fs/promises';
 import {writeFile} from 'unstorage/drivers/utils/node-fs';
 import {ClientConfig} from './config.d'
-import type {Config as ConfigType} from '@repo/ts/types/config'
+import type {Config as ConfigType} from '@bit-ship/types/types/config'
 import consola from 'consola';
 
 const path = '.'

@@ -1,0 +1,13 @@
+
+
+> bit-ship@0.0.1 publish-nightly /Users/matthewporuben/Code/bitship/apps/client-cli
+> pnpm nightly && pnpm publish --tag nightly --access public
+
+
+> bit-ship@0.0.1 nightly /Users/matthewporuben/Code/bitship/apps/client-cli
+> node ./cli/nightly.mjs
+
+[41m[30m ERR_PNPM_GIT_UNCLEAN [39m[49m [31mUnclean working tree. Commit or stash changes first.[39m
+
+If you want to disable Git checks on publish, set the "git-checks" setting to "false", or run again with "--no-git-checks".
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
