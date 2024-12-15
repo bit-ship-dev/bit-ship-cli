@@ -6,5 +6,3 @@ Find out more on our [site](https://www.bit-ship.dev/)
 - [Documentation](https://www.bit-ship.dev/docs/cli)
 
 
-
-
