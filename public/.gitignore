@@ -4,6 +4,7 @@ coverage
 
 .bit-ship
 
+.npmrc
 # Dependency directories
 node_modules/
 

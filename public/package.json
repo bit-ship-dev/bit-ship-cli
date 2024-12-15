@@ -11,8 +11,6 @@
     "start:client-cli": "pnpm start --filter bit-ship",
     "start:dependency-sandbox": "pnpm sandbox --filter @repo/dependencies"
   },
-  "devDependencies": {
-  },
   "engines": {
     "node": ">=22"
   },
