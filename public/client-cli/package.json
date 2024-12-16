@@ -3,7 +3,7 @@
   "description": "Bit-Ship CLI",
   "type": "module",
   "public": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bin": {
     "bit-ship": "bin/bin.js"
   },
@@ -13,7 +13,7 @@
   "scripts": {
     "start": "node ./bin/bin.js",
     "dev": "rollup --watch",
-    "build": "rollup",
+    "build": "rollup --config ./rollup.config.js",
     "lint": "eslint --config ../../packages/eslint/configs/base.js ./src",
     "nightly": "node ./cli/nightly.mjs",
     "typecheck": "tsc --noEmit",
@@ -31,6 +31,10 @@
   },
   "devDependencies": {
     "@bit-ship/types": "workspace:*",
+    "@rollup/plugin-typescript": "catalog:",
+    "@rollup/plugin-commonjs": "catalog:",
+    "@rollup/plugin-json": "catalog:",
+    "@rollup/plugin-terser": "catalog:",
     "@repo/eslint": "workspace:*",
     "@types/uuid": "^10.0.0",
     "typescript": "catalog:",
