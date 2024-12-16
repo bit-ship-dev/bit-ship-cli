@@ -3,7 +3,7 @@
   "description": "Bit-Ship CLI",
   "type": "module",
   "public": true,
-  "version": "0.0.1",
+  "version": "0.0.0.1",
   "bin": {
     "bit-ship": "bin/bin.js"
   },
@@ -17,7 +17,7 @@
     "lint": "eslint --config ../../packages/eslint/configs/base.js ./src",
     "nightly": "node ./cli/nightly.mjs",
     "typecheck": "tsc --noEmit",
-    "publish-nightly": "pnpm nightly && npm publish --tag nightly --access public"
+    "publish-nightly": "pnpm nightly && npm publish --tag nightly --access public",
   },
   "dependencies": {
     "@sentry/node": "catalog:",
