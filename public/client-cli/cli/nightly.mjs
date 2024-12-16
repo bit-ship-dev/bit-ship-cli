@@ -9,8 +9,7 @@ const main = async () => {
     await writeFile('package.json', JSON.stringify(packageJSON, null, 2))
 
     const tag = `client-cli-${packageJSON.version}`
-    const staticTag = `client-cli-nightly`
-    const command = `git tag ${tag} && git tag ${staticTag} -m "${packageJSON.version}"  && git push --force origin ${tag} ${staticTag}`
+    const command = `git tag ${tag} && git push --force origin ${tag}`
     exec(command, (err, stdout, stderr) => {
       if (err) {
         console.error(err)
